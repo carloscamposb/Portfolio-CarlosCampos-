@@ -1,0 +1,608 @@
+/* Seleção das cores */
+:root {
+  --soft-black: #05030B;
+  --black: #040404;
+  --white: #d1cbcb;
+  --darksecundary-color: #FFDE59;
+  --lightsecundary-color: #4C12BE;
+  --bg-destaqueD: #201632;
+  --bg-destaqueL:#a5a5a5; 
+}
+
+
+.dark-theme {
+  --background-color: var(--soft-black);
+  --fontColor: var(--white);
+  --btn-background: var(--white);
+  --btn-FontColor: var(--black);
+  --details-color: var(--darksecundary-color);
+  --bg-details:var(--bg-destaqueD);
+}
+
+.light-theme {
+  --background-color: var(--white);
+  --fontColor: var(--soft-black);
+  --btn-background: var(--black);
+  --btn-FontColor: var(--white);
+  --details-color:var(--lightsecundary-color); 
+  --bg-details:var(--bg-destaqueL);
+}
+
+.rating-stars {
+  color: var(--details-color);
+}
+
+
+/* Estilizações gerais */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--fontColor);
+  text-decoration: none;
+}
+
+body {
+    background: var(--background-color);
+    padding: 20px;
+    margin: 0 auto;
+
+}
+/* =============================================== */
+
+/* Estilização da área de navegação */
+
+.container-all {
+  max-width:1440px;
+  padding: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 180px;
+
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--background);
+  opacity: 0.9;
+  
+}
+
+
+.topic-nav .topics{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 10px;
+  list-style: none;
+  
+}
+
+
+/* Estilização do tópico com alterações de tema (área de navegação) */
+.topic-nav .mode{
+  margin-left: 50px;
+}
+
+
+.mode {
+  border-radius: 30%;
+  border: none;
+  color: var(--btn-FontColor);
+  background-color: var(--btn-background);
+}
+
+.topics .list:last-child {
+  padding: 30px;  
+}
+
+.topic-nav .list:last-child:hover {
+  background-color: var(--details-color)!important;
+  border-radius: 30%;
+  border: none;
+
+}
+
+/* --- */
+
+.list{
+  font-size: 50px;
+  font-weight: 600;
+  
+}
+
+.topic-nav .topics .list:nth-child(-n+5){
+  padding:30px
+}
+
+/* ========================================== */
+
+/* Estilização da área da capa */
+
+#home .apresentation-text{
+  position: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apresentation-title{
+  font-size: 140px;
+}
+
+.apresentation-subtitle{
+  font-size: 50px;
+  padding: 5px;
+}
+
+.name-capa{
+  font-weight: 600;
+  font-size: 60px;
+}
+
+
+/* Blocos decorativos */
+.block{
+  width: 80px;
+  padding: 1rem;
+
+}
+
+.block2{
+  rotate: 90deg;
+}
+
+/* -- */
+
+.subtitle2{
+  margin-bottom: 60px;
+}
+
+span{
+  color: var(--details-color);
+}
+
+/* Imagem do gato que muda de cor */
+.change-img{
+  width: 600px;
+  margin: 0 auto;
+ 
+}
+/* -- */
+
+
+.techniques-block{
+  position: "";
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  width: auto;
+  justify-content: center;
+  margin-bottom: 220px;
+  
+  list-style: none;
+}
+
+.techniques-block .tech-img{
+  width: 90px;
+  padding: 5px;
+}
+
+/* ============================== */
+/* Estilização do conteúdo: Sobre mim */
+
+.main-contener{
+  display: flex;
+  flex-direction: column;
+  padding: 10px; 
+}
+
+#about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+
+.img-perfil{
+  width: 300px;
+}
+
+/* Elemnto decorativo*/
+.img-perfil {
+  background-image:  url(./img/detalhes1D.png) ;
+ background-size: 80px; 
+ background-position: 90% ;
+
+
+}
+
+/* --- */
+
+
+.text-title{
+  display: flex;
+  font-size: 80px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-decoration{
+  padding: 20px;
+}
+
+.text-paragraph{
+  font-size: 35px;
+
+}
+
+.bg-text{
+  margin-bottom: 130px;
+  background-image:  url(./img/detalhes2D.png) ;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: 20% -10px;
+  }
+
+/*================================= */
+/* Estilização da área de formação */
+ 
+
+.text-paragraph{
+text-align: center;  
+margin-bottom: 40px;
+}
+
+.fa-shield-cat{
+  padding: 10px;
+  font-size: 80px;
+  
+}
+
+.fast-contact{
+padding: 20px;
+
+text-align: center;
+
+}
+
+.contact-link{
+  gap: 100px;
+  
+}
+
+.fa-brands{
+font-size: 180px;
+padding: 20px;
+margin: 20px;
+border-radius: 40px;
+color: var(--details-color);
+}
+
+
+/*  */
+
+/* Estilização da área de formação complementar */
+
+.block-topics{
+  margin-bottom: 180px;
+  list-style: none;
+  padding: 0;
+}
+
+
+.block-topics .text-topic{
+font-size: 30px;
+
+}
+
+
+.text-topic {
+  border-left: 10px solid var(--details-color); 
+  padding-left: 10px; 
+  margin-bottom: 20px; 
+  padding: 10px;
+  background-color: var(--bg-details);
+}
+
+.btn-show {
+  display: none;
+}
+
+/* -- */
+/* ================================= */
+/* Estilização das Principais Hard Skills */
+.hard-check{
+  margin-bottom: 130px;
+  background-image:url(./img/detalhes3D.png);
+  background-size: 68px;
+  background-color: 40%;
+  background-position: 100% -.3px;
+  background-repeat: no-repeat;
+  padding: 30px;
+   
+}
+
+
+.skills-check{
+  margin-bottom: 140px;
+}
+
+.block-tech{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.tech-img{
+  width: 150px;
+  padding: 20px;
+}
+
+.tech-name{
+  font-size: 40px;
+}
+
+.tech-title{
+  font-size: 50px;
+
+}
+
+.fa-star, .fa-star-half-alt{
+  color: var(--details-color);
+}
+
+/*  */
+
+/* ====================================== */
+/* Estilização das principais soft skills */
+
+.soft-check{
+margin-bottom: 130px;
+background-image:url(./img/detalhes4D.png);
+background-size: 90px;
+background-repeat: no-repeat;
+}
+
+.block-skill{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  margin: 0 auto;
+
+}
+
+.skill-img{
+ width: 150px;
+ margin-left: 50px;
+
+}
+
+.soft-skill-text{
+  font-size: 40px;
+  padding: 30px;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+/* ============================================== */
+/* Estilização da área de projetos */
+
+.projects-contaner{
+ padding-left: 20px;
+ margin-bottom: 130px;
+ background-image:  url(./img/detalhes5D.png) ;
+ background-size: 90px;
+ background-repeat: no-repeat;
+ background-position: 25% -10px;
+}
+
+
+.project-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.img-project{
+  width: 500px;
+}
+
+
+.github-project{
+  font-size: 80px;
+  margin-bottom: 4px;
+  padding-bottom: 40px;
+}
+
+.side-img{
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+  
+}
+
+.side-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  
+}
+
+.btn{
+  font-size: 40px;
+  background-color: var(--details-color);
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+ 
+}
+
+.fa-angles-right{
+color: var(--black);
+border-radius: 10px;
+}
+
+.btn-show{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.side-box-last{
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+
+
+.contact-contaner{
+  padding: 30px;
+  background-image:  url(./img/detalhes6D.png) ;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: 30%-1px ;
+  background-color: var(--bg-details);
+  border-radius: 5px;
+
+  
+}
+
+.phrase{
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+/* arrumar imagem */
+.phrase-calling{
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+/* arrumar imagem */
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  padding: 30px;
+  margin: 0 auto;
+  background-image: url(./img/patasContatoD.png);
+  background-repeat: repeat;
+  background-size: 410px;
+  background-position: 99% ;
+
+}
+
+.contact-email , #email{
+  width: 500px;
+  font-size: 20px;
+}
+
+#subject , #email, #description {
+  margin-top: 2px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+.contact-subject , #subject {
+  width: 500px;
+  font-size: 20px;
+
+}
+
+.contact-text-area, #description {
+ width: 500px; 
+ font-size: 20px;
+}
+
+
+
+.last-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .btn-send { 
+  width: 180px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+ }
+
+.btn-send:hover{
+  background-color: var(--details-color);
+}
+
+
+.phrase-btn{
+  color:var(--black);
+}
+
+
+@media screen and (min-width: 1034px) {
+  body{
+    background-color: #332749;
+
+  }
+
+  .container-all{
+    background-color: var(--background-color);
+  }
+  
+  .about-text{
+    background-position: 0;
+  }
+  
+
+  }
+  .img-project{
+    background-color: #FFDE59;
+    width: 800px;
+}
+
+
+
+
+
+
+
+
