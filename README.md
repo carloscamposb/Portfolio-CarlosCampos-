@@ -1,5 +1,5 @@
 ## Olá pessoal 👦🏻
-- Aqui está o meu portfólio contando com as ## principais informações sobre mim e os projetos mais importantes que fiz e venho fazendo!
+- Aqui está o meu portfólio contando com as principais informações sobre mim e os projetos mais importantes que fiz e venho fazendo!
 
 ------------
 ### Em constante atualização!!
