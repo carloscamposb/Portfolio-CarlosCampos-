@@ -45,16 +45,15 @@
 
 body {
     background: var(--background-color);
-    padding: 20px;
-    margin: 0 auto;
-
+    padding: 90px;
+   
 }
 /* =============================================== */
 
 /* Estilização da área de navegação */
 
 .container-all {
-  max-width:1440px;
+  max-width:821px;
   padding: 40px; 
   display: flex;
   flex-direction: column;
@@ -64,43 +63,30 @@ body {
 }
 
 
-
-header{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-bottom: 180px;
-
-}
-
-
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: var(--background);
-  opacity: 0.9;
+    /* Estilo para a barra de navegação */
   
-}
+   .topic-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(59, 58, 58);
+   }
 
-
-.topic-nav .topics{
+  .topics{
   display: flex;
-  flex-direction: row;
+  list-style: none;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 10px;
-  list-style: none;
-  
-}
+  height: 100%;
+  margin:0
+  }
+
 
 
 /* Estilização do tópico com alterações de tema (área de navegação) */
-.topic-nav .mode{
-  margin-left: 50px;
-}
+
 
 
 .mode {
@@ -124,8 +110,10 @@ nav {
 /* --- */
 
 .list{
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 600;
+  text-align: center;
+  margin-right: 10px;
   
 }
 
@@ -141,12 +129,12 @@ nav {
   position: "";
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .apresentation-title{
-  font-size: 140px;
+  font-size: 90px;
 }
 
 .apresentation-subtitle{
@@ -162,7 +150,7 @@ nav {
 
 /* Blocos decorativos */
 .block{
-  width: 80px;
+  width: 70px;
   padding: 1rem;
 
 }
@@ -183,7 +171,7 @@ span{
 
 /* Imagem do gato que muda de cor */
 .change-img{
-  width: 600px;
+  width: 550px;
   margin: 0 auto;
  
 }
@@ -193,18 +181,19 @@ span{
 .techniques-block{
   position: "";
   display: flex;
-  gap: 30px;
+  gap: 10px;
   padding: 10px;
   width: auto;
   justify-content: center;
   margin-bottom: 220px;
-  
   list-style: none;
+  margin-right: 50px;
 }
 
 .techniques-block .tech-img{
-  width: 90px;
+  width: 70px;
   padding: 5px;
+ 
 }
 
 /* ============================== */
@@ -218,7 +207,7 @@ span{
 
 #about{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
   justify-content: center;
@@ -247,6 +236,8 @@ span{
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
 }
 
 .title-decoration{
@@ -254,8 +245,17 @@ span{
 }
 
 .text-paragraph{
-  font-size: 35px;
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+  background-color:var(--bg-details);
+  font-size: 38px;
+  margin: 0 auto;
 
+}
+
+.transform-text{
+font-size: 50px;
 }
 
 .bg-text{
@@ -294,7 +294,7 @@ text-align: center;
 }
 
 .fa-brands{
-font-size: 180px;
+font-size: 150px;
 padding: 20px;
 margin: 20px;
 border-radius: 40px;
@@ -324,6 +324,7 @@ font-size: 30px;
   padding-left: 10px; 
   margin-bottom: 20px; 
   padding: 10px;
+  width: 80%;
   background-color: var(--bg-details);
 }
 
@@ -339,7 +340,7 @@ font-size: 30px;
   background-image:url(./img/detalhes3D.png);
   background-size: 68px;
   background-color: 40%;
-  background-position: 100% -.3px;
+  background-position: 43% -.3px;
   background-repeat: no-repeat;
   padding: 30px;
    
@@ -350,10 +351,16 @@ font-size: 30px;
   margin-bottom: 140px;
 }
 
+.title2{
+  margin-bottom: 80px;
+}
+ 
 .block-tech{
   padding: 20px;
   display: flex;
   align-items: center;
+  
+ 
 }
 
 .tech-img{
@@ -391,8 +398,7 @@ background-repeat: no-repeat;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 40px;
-  margin: 0 auto;
+  margin: 20px auto;
 
 }
 
@@ -413,7 +419,6 @@ background-repeat: no-repeat;
 /* Estilização da área de projetos */
 
 .projects-contaner{
- padding-left: 20px;
  margin-bottom: 130px;
  background-image:  url(./img/detalhes5D.png) ;
  background-size: 90px;
@@ -429,9 +434,11 @@ background-repeat: no-repeat;
 }
 
 .img-project{
-  width: 500px;
+width: 600px;
+display: flex;
+flex-direction: row;
+margin-right: 80px;
 }
-
 
 .github-project{
   font-size: 80px;
@@ -464,6 +471,10 @@ background-repeat: no-repeat;
  
 }
 
+.btn-show{
+  width: 60%;
+}
+
 .fa-angles-right{
 color: var(--black);
 border-radius: 10px;
@@ -480,7 +491,8 @@ border-radius: 10px;
   margin-left: 40px;
 }
 
-
+/* =================================== */
+/* Estilização da Área de contato */
 
 .contact-contaner{
   padding: 30px;
@@ -490,20 +502,19 @@ border-radius: 10px;
   background-position: 30%-1px ;
   background-color: var(--bg-details);
   border-radius: 5px;
+ 
 
   
 }
 
 .phrase{
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: 100px;
   margin-bottom: 10px;
   padding: 20px;
   text-align: center;
 }
 
-
-
-/* arrumar imagem */
 .phrase-calling{
   font-size: 40px;
   text-align: center;
@@ -511,7 +522,7 @@ border-radius: 10px;
   padding-bottom: 20px;
 }
 
-/* arrumar imagem */
+
 .contact-box{
   display: flex;
   flex-direction: column;
@@ -596,13 +607,21 @@ border-radius: 10px;
   }
   .img-project{
     background-color: #FFDE59;
-    width: 800px;
+    width: 600px;
+}
+
+@media screen and (min-width: 720px) {
+
+
+
 }
 
 
-
-
-
-
+@media screen and( min-width: 845px){
+ 
+  
+  
+ 
+}
 
 
